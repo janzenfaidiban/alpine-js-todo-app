@@ -23,7 +23,7 @@ Tempatkan di dalam elemen ```<head>...</head>```
 
 <head>
 
-    <title>SaZhop Todo app with Alpine JS</title>
+    <title>Belajar Alpine.js</title>
 
     <!-- Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -43,21 +43,27 @@ Penerapan Alpine.js di dalam elemen ```<body>...</body>```
 
 <body>
     <div x-data="{
-        name: 'Toko Sayur',
-        current: '',
-        count: 0,
-        list: ['Bayam', 'Bunga Pepaya', 'Pisang', 'Mangga'], 
-        add() {this.list.push(this.current)},
-        remove(item) {this.list.splice(this.list.indexOf(item), 1)}
-    }" class="container mt-4">
+                    name: 'Toko Sayur',
+                    current: '',
+                    count: 0,
+                    list: ['Bayam', 'Bunga Pepaya', 'Pisang', 'Mangga'], 
+                    add() {this.list.push(this.current)},
+                    remove(item) {this.list.splice(this.list.indexOf(item), 1)}
+                    }" 
+        class="container mt-4">
 
     <h1 x-text="name"></h1>
 
     <div class="input-group mb-3">
-        <input type="text" x-model="current" class="form-control form-control-lg py-3" placeholder="Nama produk...">
-        <button x-on:click="add" class="btn btn-primary">
-            <span x-text="list.length" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
-            Tambah
+        <input type="text" 
+               x-model="current" 
+               class="form-control form-control-lg py-3" 
+               placeholder="Nama produk...">
+
+        <button x-on:click="add" 
+                class="btn btn-primary">
+            <span x-text="list.length" 
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span> Tambah
         </button>
     </div>
 
@@ -65,7 +71,9 @@ Penerapan Alpine.js di dalam elemen ```<body>...</body>```
         <template x-for="item in list">
             <li class="list-group-item d-flex justify-content-between align-items-center p-3 mb-2 rounded border shadow-sm">
                 <span x-text="item"></span>
-                <button @click="remove(item)" type="button" class="btn btn-sm btn-danger btn-sm">&times;</button>
+                <button @click="remove(item)" 
+                        type="button" 
+                        class="btn btn-sm btn-danger btn-sm">&times;</button>
             </li>
         </template>
     </ul>
