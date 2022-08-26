@@ -7,6 +7,10 @@ Belajar Alpine Js dengan studi kasus simple todo app
 [AlpineJS - The Most Fun You'll Ever Have Without a JavaScript File](https://youtu.be/AyxAwnc6zN8)
 
 
+## Screenshot
+
+<img src="https://github.com/janzenfaidiban/alpine-js-todo-app/blob/main/screenshot.png?raw=true">
+
 ## Alpine.js
 
 Website Alpine.js kunjungi di sini ```https://alpinejs.dev```
