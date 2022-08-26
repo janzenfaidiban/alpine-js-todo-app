@@ -11,6 +11,10 @@ Belajar Alpine Js dengan studi kasus simple todo app
 
 <img src="https://github.com/janzenfaidiban/alpine-js-todo-app/blob/main/screenshot.png?raw=true">
 
+## Lihat hasil demo
+
+[Hasil Demo](https://janzenfaidiban.github.io/alpine-js-todo-app/)
+
 ## Alpine.js
 
 Website Alpine.js kunjungi di sini ```https://alpinejs.dev```
